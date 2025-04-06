@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!-- fuente externa -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sigmar&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- link de iconos externos -->
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body class="inicio-sesion">
+    <header class="titulo-container">
+        <h1>¡Bienvenidos Gamers!</h1>
+        <a href="./index.html"><img src="./img/logosinfondo.png" alt="logo de la pagina Full Game" class="logo"></a>
+    </header>
+    <nav class="contenedor-inicio">
+        <h2>Iniciar sesión</h2>
+        <div class="campo-inicio">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" placeholder="Ingrese su usuario">
+        </div>
+        <div class="campo-inicio">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" placeholder="Contraseña">
+        </div>
+        <div class="campo-inicio">
+            <label for="codigo">Codigo 2FA</label>
+            <input type="text" id="codigo" placeholder="Codigo 2fa">
+        </div>
+
+
+        <p>No tenes cuenta? Registrate <a href="#">Click aquí</a></p>
+        <p>Olvidaste tu contraseña? <a href="#">Recuperar contraseña</a></p>
+        <button class="boton">Confirmar</button>
+    </nav>
+
+
+    <footer>
+        <div class="contenedorFooter">
+            <div>
+                <h3>Obtener ayuda</h3>
+                <ul>
+                    <li><a href="#">Estado de orden</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Novedades</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Sobre nosotros</h3>
+                <ul>
+                    <li><a href="#">Accesibilidad</a></li>
+                    <li><a href="#">Afiliados</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal y privacidad</h3>
+                <ul>
+                    <li><a href="#">Politica de devolucion</a></li>
+                    <li><a href="#">Condiciones de uso</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="contenedorRedes">
+            <ul>
+                <li><a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <!-- abren una nueva pestaña pero por ahora no lleva a ninguna página -->
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

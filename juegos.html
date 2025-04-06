@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!-- fuente externa -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sigmar&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- link de iconos externos -->
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="titulo-container">
+            <h1>Juegos</h1>
+        </div>
+        <a href="./index.html"><img src="./img/logosinfondo.png" alt="logo de la pagina Full Game" class="logo"></a>
+        <nav class="contenedorBusqueda">
+            <input type="text" placeholder="Busqueda..." class="busqueda">
+            <a href="./index.html"><img src="./img/lupa.png" alt="icono lupa" id="lupa"></a>
+        </nav>
+        <nav class="contenedorPerfil"><!-- contiene el perfil intercambio y carrito de compras -->
+            <ul>
+                <li><a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="./intercambio.html"><i class="fa-solid fa-arrows-rotate"></i></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                <!-- como ya la sesion esta iniciada por ahora no tiene funcionalidad, debe ir al perfil -->
+                <li><a href="./index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+                <!-- cierra sesion y vuelve al inicio -->
+            </ul>
+        </nav>
+    </header>
+    <nav class="barra-consolas">
+        <h2 class="subtitulo">Seleccione la consola</h2>
+        <ul class="imagenes-fila">
+            <li>
+                <img src="./img/play.png" alt="consola playstation">
+            </li>
+            <li>
+                <img src="./img/xbox.jpg" alt="consola xbox">
+            </li>
+            <li>
+                <img src="./img/nintendosw.png" alt="nintendoswitch">
+            </li>
+            <li>
+                <img src="./img/pc.png" alt="computadora">
+            </li>
+            <li>
+                <img src="./img/sega.png" alt="sega">
+            </li>
+        </ul>
+    </nav>
+    <nav class="barra-juegos">
+        <h2 class="subtitulo">Seleccione el género</h2>
+        <ul class="lista-generos">
+            <li><a href="#">
+                    <h3>Acción</h3>
+                </a></li>
+            <!-- aún sin funcionalidad, cuando se selecciona se despliegan los juegos del genero seleccionado -->
+            <li><a href="#">
+                    <h3>Aventura</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Multijugador</h3>
+                </a></li>
+            <li><a href="#">
+                    <h3>Disparos</h3>
+                </a></li>
+        </ul>
+        <ul class="imagenes-fila">
+            <li class="columna-juego">
+                <img src="./img/dinocrisis.jpg" alt="dino crisis">
+                <a href="https://youtu.be/1pqPVztVOsQ?si=WnwoTBJ9cNuMt-qo" target="_blank"><button class="boton">Ver
+                        gameplay</button></a>
+                <a href="./carrito.html"><button class="boton">Comprar</button></a><!-- dirige al carrito de compras -->
+            </li>
+            <li class="columna-juego">
+                <img src="./img/harry2.jpg" alt="harry potter">
+                <a href="https://youtu.be/l4SoTVvwPH8?si=7qI_rAO5J9cMlHaL" target="_blank"><button class="boton">Ver
+                        gameplay</button></a>
+                <a href="./carrito.html"><button class="boton">Comprar</button></a>
+            </li>
+            <li class="columna-juego">
+                <img src="./img/rayman.jpg" alt="rayman">
+                <a href="https://youtu.be/pYWzzGK9XKw?si=4sFSQqviFJVA0kQw" target="_blank"><button class="boton">Ver
+                        gameplay</button></a>
+                <a href="./carrito.html"><button class="boton">Comprar</button></a>
+            </li>
+            <li class="columna-juego">
+                <img src="./img/crash.jpg" alt="crash">
+                <a href="https://youtu.be/hqD6wa4U4lU?si=A-QQRILn_X1s406Q" target="_blank"><button class="boton">Ver
+                        gameplay</button></a>
+                <a href="./carrito.html"><button class="boton">Comprar</button></a>
+            </li>
+        </ul>
+    </nav>
+
+    <footer>
+        <div class="contenedorFooter">
+            <div>
+                <h3>Obtener ayuda</h3>
+                <ul>
+                    <li><a href="#">Estado de orden</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Novedades</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Sobre nosotros</h3>
+                <ul>
+                    <li><a href="#">Accesibilidad</a></li>
+                    <li><a href="#">Afiliados</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal y privacidad</h3>
+                <ul>
+                    <li><a href="#">Politica de devolucion</a></li>
+                    <li><a href="#">Condiciones de uso</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="contenedorRedes">
+            <ul>
+                <li><a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <!-- abren una nueva pestaña pero por ahora no lleva a ninguna página -->
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

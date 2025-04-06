@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Full Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sigmar&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- link de iconos externos -->
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="titulo-container">
+            <h1>¡Bienvenidos!</h1>
+        </div>
+        <a href="./index.html"><img src="./img/logosinfondo.png" alt="logo de la pagina Full Game" class="logo"></a>
+        <nav class="contenedorBusqueda">
+            <input type="text" placeholder="Busqueda..." class="busqueda">
+            <a href="./index.html"><img src="./img/lupa.png" alt="icono lupa" id="lupa"></a>
+        </nav>
+        <nav class="contenedorPerfil"><!-- contiene el perfil intercambio y carrito de compras -->
+            <ul>
+                <li><a href="./carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="./intercambio.html"><i class="fa-solid fa-arrows-rotate"></i></i></a></li>
+                <li><a href="./perfil.html"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav>
+        <img src="./img/fondo-juego-futurista-azul-purpura_1128796-3333.jpg" alt="" id="fondo1">
+        <!-- fondo del carrete -->
+    </nav>
+    <nav>
+        <ul class="imagenesFila">
+            <li>
+                <img src="./img/iconojuego.jpg" alt="icono de seleccion de juego fisico">
+                <a href="./juegos.html">
+                    <h2 class="boton">Juegos</h2>
+                </a><!-- dirige a la página de juegos -->
+            </li>
+            <li>
+                <img src="./img/consola play.jpg" alt="icono de seleccion de consola">
+                <h2 class="boton">Consolas</h2> <!-- aun no dirige a ningun lado -->
+            </li>
+            <li>
+                <img src="./img/accesorios.jpg" alt="icono de seleccion de accesorios">
+                <a href="#">
+                    <h2 class="boton">Accesorios</h2>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <footer>
+        <div class="contenedorFooter">
+            <div>
+                <h3>Obtener ayuda</h3>
+                <ul>
+                    <li><a href="#">Estado de orden</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Novedades</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Sobre nosotros</h3>
+                <ul>
+                    <li><a href="#">Accesibilidad</a></li>
+                    <li><a href="#">Afiliados</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Legal y privacidad</h3>
+                <ul>
+                    <li><a href="#">Politica de devolucion</a></li>
+                    <li><a href="#">Condiciones de uso</a></li>
+                    <li><a href="#">Politica de privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="contenedorRedes">
+            <ul>
+                <li><a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <!-- abren una nueva pestaña pero por ahora no lleva a ninguna página -->
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
