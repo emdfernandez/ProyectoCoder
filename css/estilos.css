@@ -182,7 +182,7 @@ a {
 }
 
 .contenedorFooter {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: space-between;
 }
@@ -404,15 +404,19 @@ label {
     width: 100%;
 }
 .contenedor-intercambio {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3,1fr);
     margin-top: 150px;
     padding: 20px;
    
 }
-
-.nav-cnt-inter{
-    justify-content: center;
-    align-items: center;
+.contenedor-boton{
+    display: flex;
+   justify-content: center;
 }
+
+
 .contenedorFooter a{
     text-decoration: none;
     color: aliceblue;
@@ -434,15 +438,9 @@ label {
 }
 
 .caja {
-    display: flex;
-    flex: 1 1 calc(33.33%-10px);
-    aspect-ratio: 1/1;
-    justify-content: center;
-    align-items: center;
     width: 100px;
     height: 100px;
     background-color: gold;
-    color: white;
 }
 
 .intercambio-fila p {
@@ -480,15 +478,31 @@ label {
 }
 
 @media (max-width: 768px) {
+    .caja{
+        height: 80%;
+        width: 80%;
+        background-color: rgb(75, 212, 148);
+    }
  
 .contenedor-intercambio{
-    .caja{
-        flex: 1 1 calc(50%-10px);
-    }   
-    .caja:nth-child(3){
-        flex: 1 1 calc(50%- 10px)
-    }
+    padding: 0;
+    margin: 0;
+    width: 80vw;
     
-    }
+}
 
+.contenedorFooter{
+    display: grid;
+    justify-content: center;
+}
+.contenedorFooter a{
+    font-size: 13px;
+}
+}
+@media (max-width: 480px) {
+ 
+    .contenedor-intercambio{
+    
+     grid-template-columns: 1fr;
+    }
 }
