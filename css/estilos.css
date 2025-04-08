@@ -33,6 +33,7 @@ i:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .contenedor-inicio input {
@@ -74,7 +75,9 @@ i:hover{
     justify-content: center;
     font-family: 'Sigmar', Arial, Helvetica, sans-serif;
 }
-
+.titulo-container h1{
+    color: aliceblue;
+}
 h1 {
     color: white;
     font-size: 100px;
@@ -278,7 +281,7 @@ a {
     text-decoration: none;
 }
 
-.lista-generos a:hover {
+.lista-generos h3:hover {
     color: rgb(219, 209, 65);
 }
 .lista-generos h3{
