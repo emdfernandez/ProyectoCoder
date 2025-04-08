@@ -274,9 +274,15 @@ a {
     justify-content: center;
     gap: 50px;
 }
+.lista-generos a{
+    text-decoration: none;
+}
 
 .lista-generos a:hover {
-    color: burlywood;
+    color: rgb(219, 209, 65);
+}
+.lista-generos h3{
+    color: chocolate;
 }
 
 /* estilo carrito.html*/
