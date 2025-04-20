@@ -5,6 +5,7 @@
 
 /* Estilos generales */
 body {
+    min-height: 100vh;
     background-image: url('../img/fondopantalla.jpg');
     background-size: cover;
     background-position: center;
@@ -23,9 +24,9 @@ i:hover{
 }
 
 .contenedor-inicio h2 {
-    text-align: center;
+    
     color: white;
-    font-size: 80px;
+    font-size: 50px;
 }
 
 .contenedor-inicio {
@@ -48,8 +49,6 @@ i:hover{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
-
-/* EStilo inicio sesion*/
 .campo-inicio {
     display: flex;
     flex-direction: column;
@@ -69,15 +68,27 @@ i:hover{
     color: aliceblue;
 }
 
-/* Estilo index*/
-.titulo-container {
+.contenedor-sesion {
     display: flex;
-    justify-content: center;
-    font-family: 'Sigmar', Arial, Helvetica, sans-serif;
-}
-.titulo-container h1{
+  align-items: center;
+  padding: 1rem;
+  }
+  
+  .logoenbt-perfil {
+    height: 250px;
+  }
+  
+  .contenedor-sesion h1 {
+    flex: 1;
+    font-size: 70px;
+    text-align: center;
     color: aliceblue;
-}
+    font-family: 'Sigmar', Arial, Helvetica, sans-serif;
+  }
+  .header-perfil{
+    background-color: #1B1A21;
+  }
+/* Estilo index*/
 h1 {
     color: white;
     font-size: 100px;
@@ -90,13 +101,7 @@ h1 {
 }
 
 /* estilo gral del logo*/
-.logo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 380px;
-    height: 380px;
-}
+
 
 .busqueda {
     width: 50%;
@@ -112,7 +117,6 @@ h1 {
 
 .contenedorPerfil {
     display: flex;
-    justify-content: flex-end;
     margin-top: 10px;
 }
 
@@ -154,12 +158,13 @@ a {
 
 .imagenesFila li {
     text-align: center;
-    margin: 150px;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 .imagenesFila img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 100px;
     display: block;
     margin: 0 auto;
@@ -390,7 +395,12 @@ label {
 .navbar-brand{
     width: 30%;
 }
-.header-intercambio {
+.iconos-perfil{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.header-in {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -408,11 +418,28 @@ label {
 }
 
 .dv-info{
-    display: flex;
-    margin: 30px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    margin: 250px 100px;
+ 
 
 }
+.scroll{
+
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #3271cf;
+  
+}
+.dv-info .scroll{
+    margin: 0;
+}
+.dv-info div{
+    margin: 50px;
+}
+
+
 .busca-intercambio {
     display: flex;
     align-items: center;
@@ -446,53 +473,63 @@ label {
     align-items: center;
 }
 
-.caja {
-    width: 100px;
-    height: 100px;
-    background-color: gold;
+.caja img {
+    width: 250px;
+    height: 250px;
 }
 
-.intercambio-fila p {
+.intercambio-fila p, #gameplay p  {
     text-align: center;
     margin-top: 10px;
 }
 
-.contenedor-intercambio p {
+p {
     color: white;
 }
 
 #informacion {
-    width: 50%;
     padding: 20px;
     background-color: #7332db;
     border: 1px solid #ccc;
     border-radius: 5px;
-    overflow-wrap: break-word;
-    white-space: normal;
+}
+iframe{
+    width: 100%;
+    height: 300px;
 }
 
-#gameplay {
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    height: 100px;
-    background-color: greenyellow;
-    color: white;
+
+/* mq*/
+
+@media (max-width: 1183px) {
+    iframe{
+        width: 100%;
+        height: 300px;
+    }
+    .dv-info div{
+        margin: 20px;
+    }
 }
-
-#gameplay p {
-    text-align: center;
-    margin-top: 10px;
-
-}
-
-@media (max-width: 768px) {
+@media (max-width: 834px) {
+    .logoenbt-perfil {
+        height: 150px;
+      }
+      .contenedor-sesion h1 {
+        font-size: 40px;
+      }
     .imagenesFila {
+        padding: 30px;
         grid-template-columns: repeat(2,1fr);
+
+    }
+    #accesorios{
+        grid-column: 1 / -1; /* ocupa toda la fila */
+        justify-self: center;
     }
     
     .imagenesFila li {
-        margin: 50px;
+       margin-top: 38px;
+       margin-bottom: 38px;
     }
     
     .imagenesFila img {
@@ -500,18 +537,28 @@ label {
         height: 100px;
         border-radius: 40px;
     }
-   .header-intercambio{
+   .header-in{
     justify-content: center;
    }
-    .caja{
-        height: 80%;
+    .caja img{
+        height: 180px;
+        width: 180px;
+    }
+    .dv-info{
+       display: flex;
+       flex-direction: column;
+        margin: 0;
+        padding: 50px;
+    }
+    .dv-info div{
         width: 80%;
-        background-color: rgb(75, 212, 148);
+        margin: 30px;
     }
-    .contenedorFooter{
-        grid-template-columns: repeat(2,1fr)
+
+    #informacion{
+        font-size: 13px;
     }
- 
+   
 
 .contenedorFooter h3{
     font-size: 20px;
@@ -521,9 +568,47 @@ label {
 }
 }
 @media (max-width: 480px) {
- 
-    .contenedor-intercambio{
-    
-     grid-template-columns: 1fr;
+   
+    .logoenbt-perfil {
+        
+        max-width: 100%;
+      }
+      .contenedor-sesion h1 {
+        font-size: 30px;
+      }
+      .contenedor-inicio h2{
+        font-size: 30px;
+      }
+      .contenedor-sesion {
+    box-sizing: border-box;
+      padding: 30px;
+      }
+
+      .imagenesFila li {
+        margin-top: 45px;
+    margin-bottom: 45px;
+
     }
+    .dv-info{
+        grid-template-columns:1fr;
+        margin: 0;
+    }
+    .dv-info div{
+        margin: 30px;
+    }
+    #informacion{
+        font-size: 13px;
+        margin: 40px;
+    }
+   
+  
+    .intercambio-fila {
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+    }
+    .contenedorFooter{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+ 
 }
