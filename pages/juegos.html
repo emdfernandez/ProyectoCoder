@@ -17,17 +17,17 @@
 </head>
 
 <body>
-    <h1>Juegos</h1>
+
     <header class="header-in">
         <div class="div-header">
-            <a href="../index.html" class="logo-link"><img src="../img/logosinfondo.png" alt="logo de la pagina Full Game"
-                    class="logoenbt"></a>
+            <a href="../index.html" class="logo-link"><img src="../img/logosinfondo.png"
+                    alt="logo de la pagina Full Game" class="logoenbt"></a>
         </div>
-        <nav class="busca-intercambio">
+        <div class="busca-intercambio">
             <input type="text" placeholder="Busqueda..." class="busqueda">
             <a href="../index.html"><img src="../img/lupa.png" alt="icono lupa" id="lupa"></a>
-        </nav>
-        <nav class="contenedorPerfil"><!-- contiene el perfil intercambio y carrito de compras -->
+        </div>
+        <div class="contenedorPerfil"><!-- contiene el perfil intercambio y carrito de compras -->
             <ul>
                 <li><a href="../pages/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <li><a href="../pages/intercambio.html"><i class="fa-solid fa-arrows-rotate"></i></i></a></li>
@@ -36,7 +36,7 @@
                 <li><a href="../index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
                 <!-- cierra sesion y vuelve al inicio -->
             </ul>
-        </nav>
+        </div>
     </header>
     <nav class="navbar navbar-expand-lg"><!-- barra de navegacion de bootstrap-->
         <div class="container-fluid">
@@ -73,71 +73,92 @@
             </div>
         </div>
     </nav>
-    <nav class="barra-consolas">
-        <h2 class="subtitulo">Seleccione la consola</h2>
-        <ul class="imagenes-fila">
-            <li>
-                <img src="../img/play.png" alt="consola playstation">
-            </li>
-            <li>
-                <img src="../img/xbox.jpg" alt="consola xbox">
-            </li>
-            <li>
-                <img src="../img/nintendosw.png" alt="nintendoswitch">
-            </li>
-            <li>
-                <img src="../img/pc.png" alt="computadora">
-            </li>
-            <li>
-                <img src="../img/sega.png" alt="sega">
-            </li>
-        </ul>
-    </nav>
-    <nav class="barra-juegos">
-        <h2 class="subtitulo">Seleccione el género</h2>
-        <ul class="lista-generos">
-            <li><a href="#">
-                    <h3>Acción</h3>
-                </a></li>
-            <!-- aún sin funcionalidad, cuando se selecciona se despliegan los juegos del genero seleccionado -->
-            <li><a href="#">
-                    <h3>Aventura</h3>
-                </a></li>
-            <li><a href="#">
-                    <h3>Multijugador</h3>
-                </a></li>
-            <li><a href="#">
-                    <h3>Disparos</h3>
-                </a></li>
-        </ul>
-        <ul class="imagenes-fila">
-            <li class="columna-juego">
-                <img src="../img/dinocrisis.jpg" alt="dino crisis">
-                <a href="https://youtu.be/1pqPVztVOsQ?si=WnwoTBJ9cNuMt-qo" target="_blank"><button class="boton">Ver
-                        gameplay</button></a>
-                <a href="../pages/carrito.html"><button class="boton">Comprar</button></a><!-- dirige al carrito de compras -->
-            </li>
-            <li class="columna-juego">
-                <img src="../img/harry2.jpg" alt="harry potter">
-                <a href="https://youtu.be/l4SoTVvwPH8?si=7qI_rAO5J9cMlHaL" target="_blank"><button class="boton">Ver
-                        gameplay</button></a>
-                <a href="../pages/carrito.html"><button class="boton">Comprar</button></a>
-            </li>
-            <li class="columna-juego">
-                <img src="../img/rayman.jpg" alt="rayman">
-                <a href="https://youtu.be/pYWzzGK9XKw?si=4sFSQqviFJVA0kQw" target="_blank"><button class="boton">Ver
-                        gameplay</button></a>
-                <a href="../pages/carrito.html"><button class="boton">Comprar</button></a>
-            </li>
-            <li class="columna-juego">
-                <img src="../img/crash.jpg" alt="crash">
-                <a href="https://youtu.be/hqD6wa4U4lU?si=A-QQRILn_X1s406Q" target="_blank"><button class="boton">Ver
-                        gameplay</button></a>
-                <a href="../pages/carrito.html"><button class="boton">Comprar</button></a>
-            </li>
-        </ul>
-    </nav>
-
+    <main>
+        <h1 class="titulo-juegos">Juegos</h1>
+        <section class="barra-consolas">
+            <h2 class="subtitulo">Seleccione la consola</h2>
+            <ul class="imagenes-fila">
+                <li>
+                    <img src="../img/play.png" alt="consola playstation">
+                </li>
+                <li>
+                    <img src="../img/xbox.jpg" alt="consola xbox">
+                </li>
+                <li>
+                    <img src="../img/nintendosw.png" alt="nintendoswitch">
+                </li>
+                <li>
+                    <img src="../img/pc.png" alt="computadora">
+                </li>
+                <li>
+                    <img src="../img/sega.png" alt="sega">
+                </li>
+            </ul>
+        </section>
+        <section class="barra-juegos">
+            <h2 class="subtitulo">Seleccione el género</h2>
+            <ul class="lista-generos">
+                <li><a href="#">
+                        <h3>Acción</h3>
+                    </a></li>
+                <!-- aún sin funcionalidad, cuando se selecciona se despliegan los juegos del genero seleccionado -->
+                <li><a href="#">
+                        <h3>Aventura</h3>
+                    </a></li>
+                <li><a href="#">
+                        <h3>Multijugador</h3>
+                    </a></li>
+                <li><a href="#">
+                        <h3>Disparos</h3>
+                    </a></li>
+                <li><a href="#">
+                        <h3>Simulación</h3>
+                    </a></li>
+                    <li><a href="#">
+                        <h3>Deportes</h3>
+                    </a></li>
+            </ul>
+            <ul class="imagenes-fila">
+                <li class="columna-juego">
+                    <img src="../img/dinocrisis.jpg" alt="dino crisis">
+                    <a href="https://youtu.be/1pqPVztVOsQ?si=WnwoTBJ9cNuMt-qo" target="_blank"><button class="boton">
+                            Gameplay</button></a>
+                    <a href="../pages/carrito.html"><button
+                            class="boton">Comprar</button></a><!-- dirige al carrito de compras -->
+                </li>
+                <li class="columna-juego">
+                    <img src="../img/harry2.jpg" alt="harry potter">
+                    <a href="https://youtu.be/l4SoTVvwPH8?si=7qI_rAO5J9cMlHaL" target="_blank"><button class="boton">
+                            Gameplay</button></a>
+                    <a href="../pages/carrito.html"><button class="boton">Comprar</button></a>
+                </li>
+                <li class="columna-juego">
+                    <img src="../img/rayman.jpg" alt="Rayman">
+                    <a href="https://youtu.be/pYWzzGK9XKw?si=4sFSQqviFJVA0kQw" target="_blank"><button class="boton">
+                            Gameplay</button></a>
+                    <a href="../pages/carrito.html"><button class="boton">Comprar</button></a>
+                </li>
+                <li class="columna-juego">
+                    <img src="../img/crash.jpg" alt="Crash">
+                    <a href="https://youtu.be/hqD6wa4U4lU?si=A-QQRILn_X1s406Q" target="_blank"><button class="boton">
+                            Gameplay</button></a>
+                    <a href="../pages/carrito.html"><button class="boton">Comprar</button></a>
+                </li>
+                <li class="columna-juego">
+                    <img src="../img/metalSlugx.png" alt="Metal slug x">
+                    <a href="https://youtu.be/ou-3_Ba_9CE?si=3Jt8kADxw50D9018" target="_blank"><button class="boton">
+                        Gameplay</button></a>
+                    <a href="../pages/carrito.html"><button class="boton">Comprar</button></a>
+                </li>
+                <li class="columna-juego">
+                    <img src="../img/bloody-roar.png" alt="Bloody Roar">
+                    <a href="https://youtu.be/ve9VyGf47sQ?si=48BKhoj7YWz-7I5Z" target="_blank"><button class="boton">
+                            Gameplay</button></a>
+                    <a href="../pages/carrito.html"><button class="boton">Comprar</button></a>
+                </li>
+            </ul>
+        </section>
+    </main>
     <footer>
         <div class="contenedorFooter">
             <div>

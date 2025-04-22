@@ -1,5 +1,6 @@
 /*reset*/
-*{  margin:0;
+* {
+    margin: 0;
     padding: 0;
 }
 
@@ -12,19 +13,26 @@ body {
     background-repeat: no-repeat;
 }
 
-i{
-    color:aquamarine
+i {
+    color: rgb(42, 15, 165);
+    text-shadow:
+    1px 1px 2px white,
+   -1px -1px 2px white,
+    1px -1px 2px white,
+   -1px 1px 2px white;
 }
-i:hover{
-    color: rgb(185, 185, 51);
+
+i:hover {
+    color: rgb(120, 113, 209);
 }
+
 /* Estilo inicio sesion*/
 .inicio-sesion {
     background-image: url('../img/fondoneon.jpg');
 }
 
 .contenedor-inicio h2 {
-    
+
     color: white;
     font-size: 50px;
 }
@@ -49,6 +57,7 @@ i:hover{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
+
 .campo-inicio {
     display: flex;
     flex-direction: column;
@@ -70,24 +79,26 @@ i:hover{
 
 .contenedor-sesion {
     display: flex;
-  align-items: center;
-  padding: 1rem;
-  }
-  
-  .logoenbt-perfil {
+    align-items: center;
+    padding: 1rem;
+}
+
+.logoenbt-perfil {
     height: 250px;
-  }
-  
-  .contenedor-sesion h1 {
+}
+
+.contenedor-sesion h1 {
     flex: 1;
     font-size: 70px;
     text-align: center;
     color: aliceblue;
     font-family: 'Sigmar', Arial, Helvetica, sans-serif;
-  }
-  .header-perfil{
+}
+
+.header-perfil {
     background-color: #1B1A21;
-  }
+}
+
 /* Estilo index*/
 h1 {
     color: white;
@@ -153,7 +164,7 @@ a {
 
 .imagenesFila {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .imagenesFila li {
@@ -190,9 +201,10 @@ a {
 
 .contenedorFooter {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    
+    margin: 50px 10px 5px 10px;
+
 }
 
 .contenedorFooter div {
@@ -203,15 +215,17 @@ a {
     padding-bottom: 5px;
 }
 
-.contenedorFooter h3{
+.contenedorFooter h3 {
     font-size: 25px;
     color: white;
 }
+
 .contenedorFooter a {
     text-decoration: none;
     font-size: 15px;
     color: white;
 }
+
 .contenedorFooter a:hover {
     color: aqua;
 }
@@ -239,28 +253,39 @@ a {
 }
 
 /* estilos juegos.html*/
-.barra-consolas {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
+.titulo-juegos{
+    font-size: 70px;
+    text-align: center;
+    color: #ccd4e0;
+    font-weight: bold;
+    box-shadow: 0 0 65px 60px #7332db;
+    background-color: #7332db;
+    text-shadow: 
+    -3px -3px 0 #000,
+    3px -3px 0 #000,
+    -3px 3px 0 #000,
+    3px 3px 0 #000;
+}
+.barra-consolas, .barra-juegos{
+    margin: 10px 30px;
 }
 
 .barra-consolas img {
-    width: 200px;
+    width: 180px;
     height: auto;
     padding: 10px;
+    border-radius: 3em;
 }
 
 .subtitulo {
     color: white;
-    display: flex;
-    text-align: center;
+font-size: 30px;
+margin-bottom: 40px;
 }
 
 .imagenes-fila {
     display: flex;
-    width: 100%;
+    gap: 50px;
     align-items: center;
     justify-content: center
 }
@@ -277,29 +302,203 @@ a {
     align-items: center;
 }
 
+.imagenes-fila img {
+    transition: transform 0.3s ease;
+}
+
+.imagenes-fila img:hover {
+    transform: scale(1.05);
+    z-index: 1;
+    box-shadow: 0 0 20px 5px rgba(0, 150, 255, 0.6);
+}
+
 .lista-generos {
     display: flex;
     justify-content: center;
     gap: 50px;
+    margin-bottom: 50px;
 }
-.lista-generos a{
+
+.lista-generos a {
     text-decoration: none;
 }
 
 .lista-generos h3:hover {
-    color: rgb(219, 209, 65);
+    color: rgb(120, 113, 209);
 }
-.lista-generos h3{
-    color: chocolate;
+
+.lista-generos h3 {
+    color: rgb(200, 211, 245);
+   
+    text-shadow:1px 5px #000000;
 }
 
 /* estilo carrito.html*/
+.imagen-producto{
+    width: 150px;
+    height: auto;
+}
+.titulo-compra h2{
+    background-color: #000;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.contenedor-compra{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    background-color: #c8c1d4;
+    padding: 10px;
+}
+
+
+.contenedor-detalle{
+    display: grid;
+    grid-template-columns: 3fr 4fr 1fr;
+    gap: 20px;
+    padding: 15px;
+}
+.contenedor-detalle div,.reemplazo,.join-pro,.cont-col2,.col2-fil3{
+background-color: rgb(247, 247, 247);
+}
+.detalle-producto{
+    display: flex;
+}
+.detalle-precio{
+    text-align: center;
+}
+.main-item-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.detalle-producto{
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.retiro form label{
+    display:block;
+    margin-bottom: 30px;
+    
+}
+.cantidad label,.retiro form label{
+    font-weight: bold;
+}
+.cantidad{
+    margin: 20px;
+}
+.cantidad a{
+   display: flow-root;
+    color: #000000;
+}
+.fila-cantidad{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
 .columna-detalle form {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
+.reemplazo{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 20px 10px;
+    padding: 10px;
+    border: 1px solid #535253
+}
+.reemplazo form{
+    display: flex;
+}
+.plan{
+    text-align: center;
+    margin: 1px 10px;
+}
+.col2-fil2,.precio-plan, .reemplazo div span, .negrita{
+    font-weight: bold;
+}
+.detalle-a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.cont-col1 h3{
+    font-size: 18px;
+    padding: 5px 20px;
+}
+.logo-pro img{
+    width: 150px;
+    height: 150px;
+}
+.join-pro{
+    display: flex;
+    padding: 5px 20px;
+}
+.cont-pro{
+    padding: 5px 20px;
+}
+.cont-pro div{
+    margin-bottom: 25px;
+}
+
+.join-pro .boton{
+    background-color: #f3f4f5;
+    color: #000;
+    font-weight: bold;
+}
+.contenedor-boton-pro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #5b595c;
+}
+.contenedor-boton-pro div{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-boton-pro .boton:hover{
+    background-color: #786DF6;
+    color: #ccc;
+}
+.cont-col2{
+    padding: 15px;
+}
+.cont-col2 h2{
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.cont-col2 p{
+   color: #000;
+}
+.col2-fil3 p{
+    display: none;
+}
+#caja {
+    background-color: red;
+}
+
+#paypal {
+    background-color: yellow;
+}
+
+#gpay {
+    background-color: lightslategray;
+    
+}
+#caja,#paypal,#gpay{
+    width: 100%;
+    height: 30px;
+}
+.col2-fil1{
+    border-bottom: 3px solid #524791;
+}
+/*
 .subtitulo-resumen {
     text-align: center;
     width: 100%;
@@ -352,90 +551,89 @@ label {
     display: block;
 }
 
-#caja {
-    background-color: red;
-    width: 150px;
-    height: 30px;
-}
 
-#paypal {
-    background-color: yellow;
-    width: 150px;
-    height: 30px;
-}
-
-#gpay {
-    background-color: lightslategray;
-    width: 150px;
-    height: 30px;
-}
-
+*/
 /* estilo intercambio*/
 .navbar {
-    background-color:#18151A !important; /* Cambia el color de fondo */
+    background-color: #18151A !important;
+    /* Cambia el color de fondo */
 }
-.navbar .navbar-brand, 
+
+.navbar .navbar-brand,
 .navbar .nav-link {
-    color: white !important; /* Cambia el color del texto */
+    color: white !important;
+    /* Cambia el color del texto */
 }
 
 .navbar .nav-link:hover {
     color: #786DF6 !important;
 }
+
 .navbar-toggler {
-    border-color: white !important; /* Cambia el borde del botón */
+    border-color: white !important;
+    /* Cambia el borde del botón */
 }
 
 .navbar-toggler-icon {
-    filter: invert(1); /* Invierte el color (de negro a blanco) */
+    filter: invert(1);
+    /* Invierte el color (de negro a blanco) */
 }
-.logoenbt{
+
+.logoenbt {
     width: 100%;
 }
-.navbar-brand{
+
+.navbar-brand {
     width: 30%;
 }
-.iconos-perfil{
+
+.iconos-perfil {
     display: flex;
     justify-content: space-between;
     margin-left: 10px;
 }
+
 .header-in {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #1B1A21;
-    flex-wrap: wrap;
+
 }
-.div-header{
+
+.div-header {
     width: 200px;
     height: 200px;
 }
-.logo-link{
+
+.logo-link {
     width: 200px;
     height: auto;
 }
 
-.dv-info{
+.dv-info {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     margin: 250px 100px;
- 
+
 
 }
-.scroll{
+
+.scroll {
 
     max-height: 300px;
     overflow-y: auto;
     border: 1px solid #3271cf;
-  
+
 }
-.dv-info .scroll{
+
+.dv-info .scroll {
     margin: 0;
 }
-.dv-info div{
+
+.dv-info div {
     margin: 50px;
 }
 
@@ -443,27 +641,34 @@ label {
 .busca-intercambio {
     display: flex;
     align-items: center;
-    width: 500px;
+    width: 45%;
 }
-.busca-intercambio input{
-    width: 100%;
+
+.busca-intercambio input {
+    width: 90%;
 }
+
 .contenedor-intercambio {
     display: flex;
     flex-direction: column;
-    align-items:center ;
+    align-items: center;
     margin-top: 50px;
     padding: 20px;
-   
+
 }
-.contenedor-boton{
+.contenedor-intercambio h1, .contenedor-intercambio h2{
+    color: #f2f1f3;
+    margin-bottom: 40px;
+}
+
+.contenedor-boton {
     display: flex;
-   justify-content: center;
+    justify-content: center;
 }
 
 .intercambio-fila {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
@@ -478,7 +683,8 @@ label {
     height: 250px;
 }
 
-.intercambio-fila p, #gameplay p  {
+.intercambio-fila p,
+#gameplay p {
     text-align: center;
     margin-top: 10px;
 }
@@ -493,7 +699,8 @@ p {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-iframe{
+
+iframe {
     width: 100%;
     height: 300px;
 }
@@ -502,113 +709,240 @@ iframe{
 /* mq*/
 
 @media (max-width: 1183px) {
-    iframe{
+    iframe {
         width: 100%;
         height: 300px;
     }
-    .dv-info div{
+
+    .dv-info div {
         margin: 20px;
     }
+    .navbar-brand{
+        width: 10% !important;
+    }
+    /*Juegos*/
+    .imagenes-fila , .lista-generos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        text-align: center;
+       
+    }
+    .imagenes-fila .boton{
+        font-size: 18px;
+        font-weight:500;
+    }
+    .titulo-juegos{
+        font-size: 45px;
+    }
+    .subtitulo {
+    font-size: 25px;
+    }
+    .lista-generos h3{
+        font-size: 20px;
+        color: antiquewhite;
+    }
 }
+
 @media (max-width: 834px) {
     .logoenbt-perfil {
         height: 150px;
-      }
-      .contenedor-sesion h1 {
+    }
+
+    .contenedor-sesion h1 {
         font-size: 40px;
-      }
+    }
+
     .imagenesFila {
         padding: 30px;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
 
     }
-    #accesorios{
-        grid-column: 1 / -1; /* ocupa toda la fila */
+
+    #accesorios {
+        grid-column: 1 / -1;
+        /* ocupa toda la fila */
         justify-self: center;
     }
-    
+
     .imagenesFila li {
-       margin-top: 38px;
-       margin-bottom: 38px;
+        margin-top: 38px;
+        margin-bottom: 38px;
     }
-    
+
     .imagenesFila img {
         width: 100px;
         height: 100px;
         border-radius: 40px;
     }
-   .header-in{
-    justify-content: center;
-   }
-    .caja img{
-        height: 180px;
-        width: 180px;
+
+    .header-in {
+        justify-content: center;
     }
-    .dv-info{
-       display: flex;
-       flex-direction: column;
+
+    .caja img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .dv-info {
+        display: flex;
+        flex-direction: column;
         margin: 0;
         padding: 50px;
     }
-    .dv-info div{
+
+    .dv-info div {
         width: 80%;
         margin: 30px;
     }
 
-    #informacion{
+    #informacion {
         font-size: 13px;
     }
-   
 
-.contenedorFooter h3{
-    font-size: 20px;
+
+    .contenedorFooter h3 {
+        font-size: 20px;
+    }
+
+    .contenedorFooter a {
+        font-size: 13px;
+    }
+    /* gral*/
+    .header-in{
+        flex-wrap: wrap;
+    }
+    .busca-intercambio {
+        width: 100%;
+    }
 }
-.contenedorFooter a{
-    font-size: 13px;
-}
-}
-@media (max-width: 480px) {
-   
+
+@media (max-width: 580px) {
+
     .logoenbt-perfil {
-        
-        max-width: 100%;
-      }
-      .contenedor-sesion h1 {
-        font-size: 30px;
-      }
-      .contenedor-inicio h2{
-        font-size: 30px;
-      }
-      .contenedor-sesion {
-    box-sizing: border-box;
-      padding: 30px;
-      }
 
-      .imagenesFila li {
+        max-width: 100%;
+    }
+/* Peril */
+    .contenedor-sesion h1 {
+        font-size: 30px;
+    }
+
+    .contenedor-inicio h2 {
+        font-size: 30px;
+    }
+
+    .contenedor-sesion {
+        box-sizing: border-box;
+        padding: 30px;
+    }
+
+    /* intercambio*/
+
+    .imagenesFila li {
         margin-top: 45px;
-    margin-bottom: 45px;
+        margin-bottom: 45px;
 
     }
-    .dv-info{
-        grid-template-columns:1fr;
+
+    .dv-info {
+        grid-template-columns: 1fr;
         margin: 0;
     }
-    .dv-info div{
+
+    .dv-info div {
         margin: 30px;
     }
-    #informacion{
+
+    #informacion {
         font-size: 13px;
         margin: 40px;
     }
-   
-  
+
+
     .intercambio-fila {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
-    .contenedorFooter{
-        grid-template-columns: repeat(1,1fr);
+    /*Juegos*/
+    .imagenes-fila , .lista-generos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(3,1fr);
+        padding: 15px !important;
+        margin: 15px;
     }
- 
+    .imagenes-fila img{
+        width: 130px;
+        height: auto;
+    }
+    .imagenes-fila .boton{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .titulo-juegos{
+        font-size: 40px;
+    }
+    .subtitulo {
+    font-size: 20px;
+    }
+    .lista-generos h3{
+        font-size: 15px;
+        color: antiquewhite;
+    }
+    /*carrito*/
+    .titulo-compra h2{
+        font-size: 18px;
+    }
+    .col2-fil2{
+        display: none;
+    }
+    .col2-fil3 {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); 
+        z-index: 1000;
+      }
+    .col2-fil3 p{
+        display: block;
+    }
+    .contenedor-compra {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .contenedor-detalle,.reemplazo{
+       grid-template-columns: 1fr;
+    }
+    .detalle-precio{
+        display: none;
+    }
+    .plan{
+        text-align: left;
+    }
+    .reemplazo form,.join-pro{
+        flex-direction: column;
+    }
+    .logo-pro img {
+        width: 250px;
+        height: 150px;
+        margin: 1em 2em;
+    }
+    .join-pro .boton{
+        padding: 5px 15px;
+    }
+    .contenedorFooter-carrito{
+        grid-template-columns: repeat(2, 1fr)!important;
+        grid-template-rows: repeat(3, 1fr)!important;
+    }
+/*General*/
+    .contenedorFooter {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
 }
