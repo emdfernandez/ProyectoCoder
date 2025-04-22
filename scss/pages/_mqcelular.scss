@@ -8,16 +8,18 @@
     /*index*/
     .hero-title {
         font-size: 1.8rem;
-      }
-    
-      .hero-button {
+    }
+
+    .hero-button {
         padding: 0.4rem 1.2rem;
         font-size: 0.9rem;
-      }
+    }
+
     .imagenesFila .boton {
         padding: 10px 21px;
         font-size: 15px;
     }
+
     .logoenbt-perfil {
 
         max-width: 100%;
@@ -31,20 +33,24 @@
     .contenedor-sesion {
         box-sizing: border-box;
         padding: 30px;
-        h1{
+
+        h1 {
             font-size: 30px;
         }
     }
+
     /* intercambio*/
 
     .imagenesFila li {
         margin-top: 45px;
         margin-bottom: 45px;
     }
+
     .dv-info {
         grid-template-columns: 1fr;
         margin: 0;
-        div{
+
+        div {
             margin: 30px;
         }
     }
@@ -53,34 +59,39 @@
         font-size: 13px;
         margin: 40px;
     }
+
     .intercambio-fila {
-        @include grid-gap(grid,repeat(2,1fr),15px);
+        @include grid-gap(grid, repeat(2, 1fr), 15px);
     }
 
     /*Juegos*/
     .imagenes-fila,
     .lista-generos {
-        @include grid-row(grid,repeat(2,1fr),repeat(3,1fr));
+        @include grid-row(grid, repeat(2, 1fr), repeat(3, 1fr));
         padding: 15px !important;
         margin: 15px;
     }
-    .imagenes-fila{
-        img{
-            @include medidas(130px,auto);
+
+    .imagenes-fila {
+        img {
+            @include medidas(130px, auto);
         }
-        .boton{
+
+        .boton {
             font-size: 12px;
-        font-weight: bold;
+            font-weight: bold;
         }
-        
+
     }
 
     .titulo-juegos {
         font-size: 40px;
     }
+
     .subtitulo {
         font-size: 20px;
     }
+
     .lista-generos h3 {
         font-size: 15px;
         color: antiquewhite;
@@ -103,7 +114,8 @@
         padding: 10px;
         box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
         z-index: 1000;
-        p{
+
+        p {
             display: block;
         }
     }
@@ -116,7 +128,7 @@
 
     .contenedor-detalle,
     .reemplazo {
-        @include grid(grid,1fr);
+        @include grid(grid, 1fr);
     }
 
     .detalle-precio {
@@ -133,7 +145,7 @@
     }
 
     .logo-pro img {
-        @include medidas(250px,150px);
+        @include medidas(250px, 150px);
         margin: 1em 2em;
     }
 
@@ -142,12 +154,12 @@
     }
 
     .contenedorFooter-carrito {
-        @include grid-row(grid,repeat(2,1fr)!important,repeat(3,1fr)!important);
+        @include grid-row(grid, repeat(2, 1fr) !important, repeat(3, 1fr) !important);
     }
 
     /*General*/
     .contenedorFooter {
-        @include grid-row(grid,repeat(1,1fr),repeat(3,1fr));
+        @include grid-row(grid, repeat(1, 1fr), repeat(3, 1fr));
     }
 
 }

@@ -1,10 +1,11 @@
 @import "../abstract/_mixin.css";
 @import "../abstract/variables";
+
 /* Estilo juegos*/
 .titulo-juegos {
     font-size: 70px;
     text-align: center;
-    color:$color-secundario;
+    color: $color-secundario;
     color: #ccd4e0;
     font-weight: bold;
     box-shadow: 0 0 65px 60px #7332db;
@@ -15,50 +16,61 @@
         -3px 3px 0 #000,
         3px 3px 0 #000;
 }
-.barra-consolas{
+
+.barra-consolas {
     @include barra-estilos;
-    img{
-        @include medidas(180px,auto);
+
+    img {
+        @include medidas(180px, auto);
         padding: 10px;
-    border-radius: 3em;
+        border-radius: 3em;
     }
 }
-.barra-juegos{
-   @include barra-estilos;
-   img{
-    @include medidas(200px,auto);
-    padding: 10px;
-   }
+
+.barra-juegos {
+    @include barra-estilos;
+
+    img {
+        @include medidas(200px, auto);
+        padding: 10px;
+    }
 }
+
 .subtitulo {
     color: $color-secundario;
     font-size: 30px;
     margin-bottom: 40px;
 }
+
 .imagenes-fila {
     @include flex-just;
     align-items: center;
-    
-    img{
+
+    img {
         transition: transform 0.3s ease;
-        &:hover{
+
+        &:hover {
             transform: scale(1.05);
             z-index: 1;
-            box-shadow: 0 0 20px 5px rgba(0, 150, 255, 0.6); 
+            box-shadow: 0 0 20px 5px rgba(0, 150, 255, 0.6);
         }
     }
 }
+
 .columna-juego {
     @include flex-align;
     flex-direction: column;
 }
+
 .lista-generos {
-   @include flex-just;
+    @include flex-just;
     margin-bottom: 50px;
-    h3{
+
+    h3 {
         color: rgb(200, 211, 245);
         text-shadow: 1px 5px #000000;
-        &:hover{
+
+        &:hover {
             color: rgb(120, 113, 209);
         }
     }

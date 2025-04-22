@@ -1,9 +1,11 @@
 @import "../abstract/variables";
 @import "../abstract/mixin";
+
 /*Estilos carrito*/
 .imagen-producto {
-    @include medidas(150px,auto);
+    @include medidas(150px, auto);
 }
+
 .titulo-compra h2 {
     background-color: #000;
     color: aliceblue;
@@ -11,125 +13,161 @@
 }
 
 .contenedor-compra {
-    @include grid-gap(grid,3fr 1fr,30px);
+    @include grid-gap(grid, 3fr 1fr, 30px);
     background-color: #c8c1d4;
     padding: 10px;
 }
+
 .contenedor-detalle {
-    @include grid-gap(grid,3fr 4fr 1fr,20px);
+    @include grid-gap(grid, 3fr 4fr 1fr, 20px);
     padding: 15px;
 }
-.contenedor-detalle div{
-    background-color:$fondo-carrito;
-}
-.reemplazo,.join-pro,.cont-col2,.col2-fil3{
+
+.contenedor-detalle div {
     background-color: $fondo-carrito;
 }
+
+.reemplazo,
+.join-pro,
+.cont-col2,
+.col2-fil3 {
+    background-color: $fondo-carrito;
+}
+
 .detalle-producto {
     @include flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
+
 .detalle-precio {
     text-align: center;
 }
+
 .main-item-info {
-    @include grid(grid,1fr 1fr);
+    @include grid(grid, 1fr 1fr);
 }
+
 .retiro form label {
     display: block;
     margin-bottom: 30px;
 }
+
 .cantidad {
     margin: 20px;
-    a{
+
+    a {
         display: flow-root;
         color: $color-principal;
     }
 }
+
 .cantidad label,
-.retiro form label,.col2-fil2,
+.retiro form label,
+.col2-fil2,
 .precio-plan,
 .reemplazo div span,
-.negrita,.detalle-a,.join-pro .boton {
+.negrita,
+.detalle-a,
+.join-pro .boton {
     font-weight: bold;
 }
+
 .fila-cantidad {
     @include flex-align;
     gap: 10px;
     margin-top: 5px;
 }
+
 .columna-detalle form {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
+
 .reemplazo {
-    @include grid(grid,2fr 1fr);
+    @include grid(grid, 2fr 1fr);
     margin: 20px 10px;
     padding: 10px;
     border: 1px solid #535253
 }
+
 .reemplazo form {
-   @include flex;
+    @include flex;
 }
+
 .plan {
     text-align: center;
     margin: 1px 10px;
 }
+
 .detalle-a {
     text-decoration: none;
     color: #000;
 }
+
 .cont-col1 h3 {
     font-size: 18px;
     padding: 5px 20px;
 }
+
 .logo-pro img {
-    @include medidas(150px,150px);
+    @include medidas(150px, 150px);
 }
+
 .join-pro {
     @include flex;
     padding: 5px 20px;
-    .boton{
+
+    .boton {
         background-color: #f3f4f5;
         color: #000;
     }
 }
+
 .cont-pro {
     padding: 5px 20px;
-    div{
+
+    div {
         margin-bottom: 25px;
     }
 }
+
 .contenedor-boton-pro {
     @include flex-align;
     justify-content: space-between;
     border-top: 2px solid #5b595c;
-    div{
+
+    div {
         @include flex;
         flex-direction: column;
     }
-    .boton:hover{
+
+    .boton:hover {
         background-color: #786DF6;
-    color: #ccc;
+        color: #ccc;
     }
 }
+
 .cont-col2 {
     padding: 15px;
-    h2{
+
+    h2 {
         font-size: 17px;
         font-weight: 700;
         text-transform: uppercase;
-        text-align: center;  
+        text-align: center;
     }
-    p{
+
+    p {
         color: #000;
     }
 }
+
 .col2-fil3 p {
     display: none;
 }
+
 #caja {
     background-color: red;
 }
@@ -142,11 +180,13 @@
     background-color: lightslategray;
 
 }
+
 #caja,
 #paypal,
 #gpay {
-    @include medidas(100%,30px);
+    @include medidas(100%, 30px);
 }
+
 .col2-fil1 {
     border-bottom: 3px solid #524791;
 }

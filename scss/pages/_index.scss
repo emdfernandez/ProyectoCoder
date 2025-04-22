@@ -8,6 +8,7 @@ h1 {
     color: $color-secundario;
     font-size: 100px;
 }
+
 .iconos-perfil {
     @include flex;
     justify-content: space-between;
@@ -15,13 +16,14 @@ h1 {
 }
 
 .header-in {
-   @include flex-align;
+    @include flex-align;
     justify-content: space-between;
     padding: 10px 20px;
     background-color: #1B1A21;
 }
+
 .div-header {
-    @include medidas(200px,200px);
+    @include medidas(200px, 200px);
 }
 
 #lupa {

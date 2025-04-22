@@ -5,15 +5,16 @@
 
 
 @media (max-width: 834px) {
+
     /*index*/
     .hero-title {
         font-size: 2.5rem;
-      }
-    
-      .hero-button {
+    }
+
+    .hero-button {
         padding: 0.5rem 1.5rem;
         font-size: 0.95rem;
-      }
+    }
 
     /* perfil*/
     .logoenbt-perfil {
@@ -27,49 +28,57 @@
     .imagenesFila {
         padding: 30px;
         grid-template-columns: repeat(2, 1fr);
-        li{
+
+        li {
             margin-top: 38px;
             margin-bottom: 38px;
         }
-        img{
-            @include medidas(100px,100px);
+
+        img {
+            @include medidas(100px, 100px);
             border-radius: 40px;
         }
     }
+
     .header-in {
         justify-content: center;
     }
+
     /*Intercambio*/
 
     .caja img {
-        @include medidas(150px,150px);
+        @include medidas(150px, 150px);
     }
 
     .dv-info {
-       @include flex;
+        @include flex;
         flex-direction: column;
         margin: 0;
         padding: 50px;
-        div{
+
+        div {
             width: 80%;
-        margin: 30px;
+            margin: 30px;
         }
     }
 
     #informacion {
         font-size: 13px;
     }
+
     /* gral*/
     .contenedorFooter h3 {
         font-size: 20px;
     }
+
     .contenedorFooter a {
         font-size: 13px;
     }
-    
+
     .header-in {
         flex-wrap: wrap;
     }
+
     .busca-intercambio {
         width: 100%;
     }
