@@ -376,10 +376,8 @@ h1 {
 }
 
 .imagenes-fila {
-  display: flex;
-  gap: 50px;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .imagenes-fila img {
   transition: transform 0.3s ease;
@@ -390,10 +388,16 @@ h1 {
   box-shadow: 0 0 20px 5px rgba(0, 150, 255, 0.6);
 }
 
+.columna-consola {
+  display: flex;
+  justify-content: center;
+}
+
 .columna-juego {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 30px;
 }
 
 .lista-generos {
@@ -405,6 +409,7 @@ h1 {
 .lista-generos h3 {
   color: rgb(200, 211, 245);
   text-shadow: 1px 5px #000000;
+  text-align: center;
 }
 .lista-generos h3:hover {
   color: rgb(120, 113, 209);
@@ -441,7 +446,10 @@ h1 {
   background-color: rgb(247, 247, 247);
 }
 
-.reemplazo, .join-pro, .cont-col2, .col2-fil3 {
+.reemplazo,
+.join-pro,
+.cont-col2,
+.col2-fil3 {
   background-color: rgb(247, 247, 247);
 }
 
@@ -474,10 +482,13 @@ h1 {
 }
 
 .cantidad label,
-.retiro form label, .col2-fil2,
+.retiro form label,
+.col2-fil2,
 .precio-plan,
 .reemplazo div span,
-.negrita, .detalle-a, .join-pro .boton {
+.negrita,
+.detalle-a,
+.join-pro .boton {
   font-weight: bold;
 }
 
@@ -706,6 +717,14 @@ iframe {
   .header-in {
     justify-content: center;
   }
+  /*Juego*/
+  .columna-juego .boton {
+    padding: 10px 20px;
+  }
+  .lista-generos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   /*Intercambio*/
   .caja img {
     width: 150px;
@@ -872,7 +891,7 @@ iframe {
     grid-template-rows: repeat(3, 1fr);
   }
 }
-@media (max-width: 1183px) {
+@media (min-width: 834px) and (max-width: 1183px) {
   iframe {
     width: 100%;
     height: 300px;

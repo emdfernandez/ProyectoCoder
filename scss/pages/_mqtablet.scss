@@ -43,6 +43,13 @@
     .header-in {
         justify-content: center;
     }
+    /*Juego*/
+    .columna-juego .boton{
+        padding: 10px 20px;
+    }
+    .lista-generos{
+        @include grid(grid,repeat(2,1fr));
+    }
 
     /*Intercambio*/
 

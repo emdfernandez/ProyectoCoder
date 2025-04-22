@@ -43,8 +43,8 @@
 }
 
 .imagenes-fila {
-    @include flex-just;
-    align-items: center;
+    @include grid(grid,repeat(3,1fr));
+
 
     img {
         transition: transform 0.3s ease;
@@ -56,10 +56,14 @@
         }
     }
 }
-
+.columna-consola{
+    display: flex;
+    justify-content: center;
+}
 .columna-juego {
     @include flex-align;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .lista-generos {
@@ -69,6 +73,7 @@
     h3 {
         color: rgb(200, 211, 245);
         text-shadow: 1px 5px #000000;
+        text-align: center;
 
         &:hover {
             color: rgb(120, 113, 209);

@@ -3,7 +3,7 @@
 //variables
 @import "../abstract/variables";
 
-@media (max-width: 1183px) {
+@media (min-width:834px) and (max-width: 1183px) {
     iframe {
         @include medidas(100%, 300px);
     }
