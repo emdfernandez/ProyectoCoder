@@ -1,10 +1,14 @@
 # ProyectoCoder
+Bienvenidos!
+Para tener en cuenta:
 Los links de las páginas están arriba, perfil,carrito,intercambio.
+En el index se puede ingresar a perfil (para iniciar sesion futuro)
+luego en las demás páginas no tiene funcionalidad suponiendo que ya tiene la sesion iniciada, hacer click en salir lo va redirigir al index.
 La barra de navegación de bootstrap no posee direccionamiento a las páginas correspondientes por el momento.
-La seccion que tiene la imagen juegos también tiene link funcional.
-
+La seccion en index que tiene la imagen juegos también tiene link funcional.
 
 ////////////////////////////
 Página Juegos
-Botón comprar en Crash Bandicot, lleva hacia la página de compra.
+Botón comprar lleva hacia la página de compra.
+Gameplay abre una página externa con su respectivo gameplay.
 Efecto en selección de consola

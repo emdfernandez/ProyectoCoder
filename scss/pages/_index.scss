@@ -1,0 +1,130 @@
+//mixin
+@import "../abstract/mixin";
+//variables
+@import "../abstract/variables";
+
+/* Estilos header*/
+h1 {
+    color: $color-secundario;
+    font-size: 100px;
+}
+.iconos-perfil {
+    @include flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.header-in {
+   @include flex-align;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #1B1A21;
+}
+.div-header {
+    @include medidas(200px,200px);
+}
+
+#lupa {
+    @include medidas(50px, 50px);
+    cursor: pointer;
+}
+
+.busqueda {
+    @include medidas(50%, 30px);
+}
+
+.contenedorBusqueda {
+    @include flex-align;
+    margin-top: 20px;
+    padding: 80px;
+}
+
+.contenedorPerfil {
+    @include flex;
+    margin-top: 10px;
+
+    ul {
+        @include flex;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        display: inline;
+    }
+
+    i {
+        font-size: 25px;
+        padding: 20px;
+    }
+}
+
+/*estilo video*/
+.transformers-hero {
+    position: relative;
+    @include medidas(100%, 60vh);
+    min-height: 400px;
+    overflow: hidden;
+    @include flex-align;
+    justify-content: center;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include medidas(100%, 100%);
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: $color-secundario;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Título */
+.hero-title {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin: 0 0 1rem;
+    color: rgb(196, 28, 28);
+}
+
+/* Botón transformer*/
+.hero-button {
+    background-color: $color-secundario;
+    color: black;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero-button:hover {
+    background-color: #e0e0e0;
+}
+
+/*estilos de main*/
+.imagenesFila {
+    @include grid(grid, repeat(3, 1fr));
+
+    li {
+        text-align: center;
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    img {
+        @include medidas(250px, 250px);
+        border-radius: 100px;
+        display: block;
+        margin: 0 auto;
+    }
+}

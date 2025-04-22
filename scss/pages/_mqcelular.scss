@@ -1,0 +1,153 @@
+//mixin
+@import "../abstract/mixin";
+//variables
+@import "../abstract/variables";
+
+@media (max-width: 580px) {
+
+    /*index*/
+    .hero-title {
+        font-size: 1.8rem;
+      }
+    
+      .hero-button {
+        padding: 0.4rem 1.2rem;
+        font-size: 0.9rem;
+      }
+    .imagenesFila .boton {
+        padding: 10px 21px;
+        font-size: 15px;
+    }
+    .logoenbt-perfil {
+
+        max-width: 100%;
+    }
+
+    /* Peril */
+    .contenedor-inicio h2 {
+        font-size: 30px;
+    }
+
+    .contenedor-sesion {
+        box-sizing: border-box;
+        padding: 30px;
+        h1{
+            font-size: 30px;
+        }
+    }
+    /* intercambio*/
+
+    .imagenesFila li {
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+    .dv-info {
+        grid-template-columns: 1fr;
+        margin: 0;
+        div{
+            margin: 30px;
+        }
+    }
+
+    #informacion {
+        font-size: 13px;
+        margin: 40px;
+    }
+    .intercambio-fila {
+        @include grid-gap(grid,repeat(2,1fr),15px);
+    }
+
+    /*Juegos*/
+    .imagenes-fila,
+    .lista-generos {
+        @include grid-row(grid,repeat(2,1fr),repeat(3,1fr));
+        padding: 15px !important;
+        margin: 15px;
+    }
+    .imagenes-fila{
+        img{
+            @include medidas(130px,auto);
+        }
+        .boton{
+            font-size: 12px;
+        font-weight: bold;
+        }
+        
+    }
+
+    .titulo-juegos {
+        font-size: 40px;
+    }
+    .subtitulo {
+        font-size: 20px;
+    }
+    .lista-generos h3 {
+        font-size: 15px;
+        color: antiquewhite;
+    }
+
+    /*carrito*/
+    .titulo-compra h2 {
+        font-size: 18px;
+    }
+
+    .col2-fil2 {
+        display: none;
+    }
+
+    .col2-fil3 {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        p{
+            display: block;
+        }
+    }
+
+    .contenedor-compra {
+        @include flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contenedor-detalle,
+    .reemplazo {
+        @include grid(grid,1fr);
+    }
+
+    .detalle-precio {
+        display: none;
+    }
+
+    .plan {
+        text-align: left;
+    }
+
+    .reemplazo form,
+    .join-pro {
+        flex-direction: column;
+    }
+
+    .logo-pro img {
+        @include medidas(250px,150px);
+        margin: 1em 2em;
+    }
+
+    .join-pro .boton {
+        padding: 5px 15px;
+    }
+
+    .contenedorFooter-carrito {
+        @include grid-row(grid,repeat(2,1fr)!important,repeat(3,1fr)!important);
+    }
+
+    /*General*/
+    .contenedorFooter {
+        @include grid-row(grid,repeat(1,1fr),repeat(3,1fr));
+    }
+
+}

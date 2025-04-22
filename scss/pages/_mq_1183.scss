@@ -1,0 +1,43 @@
+//mixin
+@import "../abstract/mixin";
+//variables
+@import "../abstract/variables";
+
+@media (max-width: 1183px) {
+    iframe {
+        @include medidas(100%,300px);
+    }
+
+    .dv-info div {
+        margin: 20px;
+    }
+
+    .navbar-brand {
+        width: 10% !important;
+    }
+
+    /*Juegos*/
+    .imagenes-fila,
+    .lista-generos {
+        @include grid-row(grid,repeat(3,1fr),repeat(2,1fr));
+        text-align: center;
+    }
+
+    .imagenes-fila .boton {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .titulo-juegos {
+        font-size: 45px;
+    }
+
+    .subtitulo {
+        font-size: 25px;
+    }
+
+    .lista-generos h3 {
+        font-size: 20px;
+        color: antiquewhite;
+    }
+}

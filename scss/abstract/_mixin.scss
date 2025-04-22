@@ -1,0 +1,42 @@
+//mixin flex
+@mixin flex-align{
+    display: flex;
+    align-items: center;
+}
+
+//mixin flex solo
+@mixin flex{
+    display: flex;
+}
+//mixin flex justy
+@mixin flex-just{
+    display: flex;
+    gap: 50px;
+    justify-content: center; 
+}
+//mixin grid
+@mixin grid ($grid,$column){
+    display: grid;
+    grid-template-columns: $column;
+}
+//mixin grid con gap
+@mixin grid-gap ($grid,$column,$gap){
+    display: grid;
+    grid-template-columns: $column;
+    gap:$gap;
+}
+//mixin grid con row
+@mixin grid-row ($grid,$column,$row){
+    display: $grid;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+}
+//mixin medidas
+@mixin medidas ($width,$height){
+    width: $width;
+    height: $height;
+}
+//barra-estilos
+@mixin barra-estilos{
+    margin: 10px 30px;
+}

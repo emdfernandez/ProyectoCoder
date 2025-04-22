@@ -1,0 +1,76 @@
+//mixin
+@import "../abstract/mixin";
+//variables
+@import "../abstract/variables";
+
+
+@media (max-width: 834px) {
+    /*index*/
+    .hero-title {
+        font-size: 2.5rem;
+      }
+    
+      .hero-button {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.95rem;
+      }
+
+    /* perfil*/
+    .logoenbt-perfil {
+        height: 150px;
+    }
+
+    .contenedor-sesion h1 {
+        font-size: 40px;
+    }
+
+    .imagenesFila {
+        padding: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        li{
+            margin-top: 38px;
+            margin-bottom: 38px;
+        }
+        img{
+            @include medidas(100px,100px);
+            border-radius: 40px;
+        }
+    }
+    .header-in {
+        justify-content: center;
+    }
+    /*Intercambio*/
+
+    .caja img {
+        @include medidas(150px,150px);
+    }
+
+    .dv-info {
+       @include flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 50px;
+        div{
+            width: 80%;
+        margin: 30px;
+        }
+    }
+
+    #informacion {
+        font-size: 13px;
+    }
+    /* gral*/
+    .contenedorFooter h3 {
+        font-size: 20px;
+    }
+    .contenedorFooter a {
+        font-size: 13px;
+    }
+    
+    .header-in {
+        flex-wrap: wrap;
+    }
+    .busca-intercambio {
+        width: 100%;
+    }
+}
