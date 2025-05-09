@@ -156,6 +156,10 @@
     .contenedorFooter-carrito {
         @include grid-row(grid, repeat(2, 1fr) !important, repeat(3, 1fr) !important);
     }
+    /*Construccion*/
+    .construccion div h1{
+        font-size: 50px;
+    }
 
     /*General*/
     .contenedorFooter {
